@@ -1,7 +1,7 @@
 CHANGELOG
 ==========
 
-yet another [symfony](https://symfony.com) cheat sheet
+[Symfony](https://symfony.com) cheat sheets concerning Linux (or MacOS) systems. 
 
 Copyright Christos Pontikis http://www.pontikis.net
 
