@@ -17,6 +17,8 @@ symfony new project_name
 cd /var/www/html/project_name
 php bin/console server:start
 ```
+Point your browser to http://your-server:8000
+
 ### Virtual machines
 ```
 cd /var/www/html/project_name
