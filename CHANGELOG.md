@@ -11,6 +11,17 @@ License [MIT](https://github.com/pontikis/symfony_cheat_sheet/blob/master/LICENS
 
 
 
+Release 0.2.1 (9 Sep 2017)
+-------------------------
+
+* typo
+
+Release 0.2.0 (9 Sep 2017)
+-------------------------
+
+* symfony3.3 cheat sheet #1
+
+
 Release 0.1.0 (9 Sep 2017)
 -------------------------
 
