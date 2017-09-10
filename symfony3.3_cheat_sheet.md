@@ -37,7 +37,7 @@ php bin/console server:start 0.0.0.0:8000
 ```
 Point your browser to http://192.168.1.103:8000
 
-(using of ``0.0.0.0`` is convinient, but NOT safe in real networks)
+(using of ``0.0.0.0`` is convenient, but **NOT safe** in real networks)
 
 ### stop server
 ```
