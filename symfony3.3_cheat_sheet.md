@@ -143,3 +143,46 @@ It is important to know the ``app/config/parameters.yml`` and ``vendor`` directo
 cd /var/www/html/project_name
 composer install
 ```
+## Composer basics
+
+[Composer](https://getcomposer.org/) is a dependency manager for PHP.
+
+Packages are available in [Packagist](https://packagist.org)
+
+### install Composer
+
+In Debian Stretch as root: ``apt-get install composer`` It installs v1.2.2-1
+
+In Debian Jessie or earlier, use the [universal installer](https://getcomposer.org/download/)
+
+Go to ``/tmp``
+```
+cd /tmp
+```
+Then:
+```php
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('SHA384', 'composer-setup.php') === '669656bab3166a7aff8a7506b8cb2d1c292f042046c5a994c43155c0be6190fa0355160742ab2e1c88d40d5be660b410') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+php -r "unlink('composer-setup.php');"
+```
+(the Installer Signature (SHA-384) may change from version to version, so get it from above page or [here](https://composer.github.io/pubkeys.html))
+
+### add package
+```
+composer require vendor-name/package-name
+```
+It will install new package and add it to ``composer.json`` file in the current directory.
+
+### install packages
+```
+composer install
+```
+It will read the ``composer.json`` from the current directory, resolve the dependencies, and install them to folder ``vendor``. It will also create ``composer.lock`` if not existed.
+
+### update packages
+```
+composer update
+```
+It will update dependencies to the latest version (and ``composer.lock`` file, as well).
+
