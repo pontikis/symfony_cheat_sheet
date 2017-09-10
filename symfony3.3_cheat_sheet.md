@@ -130,7 +130,7 @@ It is strongly recommended to use a remote hosting service like [GitHub](https:/
 Create a Git repo in Github https://github.com/new Something like https://github.com/username/project_name
 ```
 cd /var/www/html/project_name
-git remote add origin git@github.com:username/project_name.git 
+git remote add github git@github.com:username/project_name.git 
 git push github master
 ```
 So, you (or your partners) can checkout Symfony project from Github  
