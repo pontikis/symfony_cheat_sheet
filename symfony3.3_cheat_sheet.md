@@ -119,3 +119,27 @@ Point your browser to http://www.project-name.com
 ## Symfony with Git
 
 After creating Symfony project, create Git repository:
+```
+cd /var/www/html/project_name
+git init
+git add .
+git commit -m "Initial commit"
+```
+It is strongly recommended to use a remote hosting service like [GitHub](https://github.com) or [Bitbucket](https://bitbucket.org/).
+
+Create a Git repo in Github https://github.com/new Something like https://github.com/username/project_name
+```
+cd /var/www/html/project_name
+git remote add origin git@github.com:username/project_name.git 
+git push github master
+```
+So, you (or your partners) can checkout symfony project from Github  
+```
+cd /var/www/html
+git clone git@github.com:username/project_name.git 
+```
+It is important to know the ``app/config/parameters.yml`` and ``vendor`` directory **are not included** in Git repo. To create them:
+```
+cd /var/www/html/project_name
+composer install
+```
