@@ -24,7 +24,7 @@ sudo chmod a+x /usr/local/bin/symfony
 cd /var/www/html
 symfony new project_name
 ```
-## Access project (built-in web server)
+## Launch project for development (built-in web server)
 
 ### localhost
 ```
@@ -58,3 +58,7 @@ php bin/console server:stop
 ### remarks
 * Allow port 8000 if you use firewall. For example (in case of iptables): ``iptables -A INPUT -p tcp --dport 8000 -j``
 * Php built-in web server doesn't support SSL encryption. It's for plain HTTP requests. 
+
+## Launch project on production (Apache 2.4 with mod_php)
+
+[more](http://symfony.com/doc/current/setup/file_permissions.html)
