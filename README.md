@@ -11,9 +11,11 @@ License [MIT](https://github.com/pontikis/symfony_cheat_sheet/blob/master/LICENS
 
 ## About
 
-Various commands are tested in Debian server (Jessie or Stretch). 
+Various commands are tested in [Debian](https://www.debian.org/) server (Jessie with php 5.7 or Stretch with php 7). 
 
-There are some differences in MacOS or Windows systems. In these cases a link [more](https:/symfony.com/doc) is set to [Symfony doc](https:/symfony.com/doc)
+[Php Built-in web server](http://php.net/manual/en/features.commandline.webserver.php) is used on development. [Apache](https://httpd.apache.org/) with ``mod_php`` is used on production. 
+
+Some commands may not work if your system setup is different. Moreover in MacOS or Windows systems. In these cases a link [more](https:/symfony.com/doc) is set to [Symfony doc](https:/symfony.com/doc).
 
 ## Files
 
