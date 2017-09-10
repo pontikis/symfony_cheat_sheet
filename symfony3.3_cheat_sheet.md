@@ -2,9 +2,9 @@
 
 [Symfony](https://symfony.com) cheat sheet for Linux. 
 
-Version 0.2.0 (see CHANGELOG.md for details)
+Version 0.2.1 (see CHANGELOG.md for details).
 
-Various commands are tested in [Debian](https://www.debian.org/) server (Jessie with php 5.7 or Stretch with php 7). [Php Built-in web server](http://php.net/manual/en/features.commandline.webserver.php) is used on development. [Apache](https://httpd.apache.org/) with ``mod_php`` is used on production. Some commands may not work if your system setup is different. Moreover in MacOS or Windows systems. In these cases a link [more](https:/symfony.com/doc) is set to [Symfony doc](https:/symfony.com/doc).
+Various commands are tested in [Debian](https://www.debian.org/) server (Jessie with php 5.7 or Stretch with php 7). [Php Built-in web server](http://php.net/manual/en/features.commandline.webserver.php) is used on development. [Apache](https://httpd.apache.org/) with ``mod_php`` is used on production. Some commands may not work if your system setup is different. Moreover in MacOS or Windows systems. In these cases a link [more](https://symfony.com/doc) is set to [Symfony doc](https://symfony.com/doc).
 
 Copyright Christos Pontikis http://www.pontikis.net
 
