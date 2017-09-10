@@ -1,6 +1,10 @@
 # symfony 3.3 cheat sheet
 
-[Symfony](https://symfony.com) cheat sheet for Linux. Various commands are tested in Debian server (Jessie or Stretch). There are some differences in MacOS or Windows systems. In these cases a link [more](https:/symfony.com/doc) is set to [Symfony doc](https:/symfony.com/doc)
+[Symfony](https://symfony.com) cheat sheet for Linux. 
+
+Version 0.2.0 (see CHANGELOG.md for details)
+
+Various commands are tested in [Debian](https://www.debian.org/) server (Jessie with php 5.7 or Stretch with php 7). [Php Built-in web server](http://php.net/manual/en/features.commandline.webserver.php) is used on development. [Apache](https://httpd.apache.org/) with ``mod_php`` is used on production. Some commands may not work if your system setup is different. Moreover in MacOS or Windows systems. In these cases a link [more](https:/symfony.com/doc) is set to [Symfony doc](https:/symfony.com/doc).
 
 Copyright Christos Pontikis http://www.pontikis.net
 
@@ -52,5 +56,5 @@ Point your browser to http://192.168.1.103:8000
 php bin/console server:stop
 ```
 ### remarks
-* Allow port 8000 if you use firewall. Foe example (in case of iptables): ``iptables -A INPUT -p tcp --dport 8000 -j``
+* Allow port 8000 if you use firewall. For example (in case of iptables): ``iptables -A INPUT -p tcp --dport 8000 -j``
 * Php built-in web server doesn't support SSL encryption. It's for plain HTTP requests. 
