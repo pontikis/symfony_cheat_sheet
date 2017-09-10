@@ -1,5 +1,13 @@
 # symfony 3.3 cheat sheet
 
+[Symfony](https://symfony.com) cheat sheet for Linux. Various commands are tested in Debian server (Jessie or Stretch). There are some differences in MacOS or Windows systems. In these cases a link [more](https:/symfony.com/doc) is set to [Symfony doc](https:/symfony.com/doc)
+
+Copyright Christos Pontikis http://www.pontikis.net
+
+Project page https://github.com/pontikis/symfony_cheat_sheet
+
+License [MIT](https://github.com/pontikis/symfony_cheat_sheet/blob/master/LICENSE)
+
 ## Installation
 ```
 sudo curl -LsS https://symfony.com/installer -o /usr/local/bin/symfony
