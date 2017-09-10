@@ -15,7 +15,7 @@ Various commands are tested in [Debian](https://www.debian.org/) server (Jessie 
 
 [Php Built-in web server](http://php.net/manual/en/features.commandline.webserver.php) is used on development. [Apache](https://httpd.apache.org/) with ``mod_php`` is used on production. 
 
-Some commands may not work if your system setup is different. Moreover in MacOS or Windows systems. In these cases a link [more](https:/symfony.com/doc) is set to [Symfony doc](https:/symfony.com/doc).
+Some commands may not work if your system setup is different. Moreover in MacOS or Windows systems. In these cases a link [more](https://symfony.com/doc) is set to [Symfony doc](https://symfony.com/doc).
 
 ## Files
 
