@@ -10,6 +10,12 @@ Project page https://github.com/pontikis/symfony_cheat_sheet
 License [MIT](https://github.com/pontikis/symfony_cheat_sheet/blob/master/LICENSE)
 
 
+Release 0.2.3 (10 Sep 2017)
+-------------------------
+
+* symfony3.3 cheat sheet - Composer basics #6
+* symfony3.3 cheat sheet - Symfony with Git #5
+
 
 Release 0.2.2 (10 Sep 2017)
 -------------------------
