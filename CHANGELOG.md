@@ -11,6 +11,11 @@ License [MIT](https://github.com/pontikis/symfony_cheat_sheet/blob/master/LICENS
 
 
 
+Release 0.2.2 (10 Sep 2017)
+-------------------------
+
+* symfony3.3 cheat sheet - Launch project on production (Apache 2.4 with mod_php) #4
+
 Release 0.2.1 (10 Sep 2017)
 -------------------------
 
@@ -19,6 +24,8 @@ Release 0.2.1 (10 Sep 2017)
 Release 0.2.0 (10 Sep 2017)
 -------------------------
 
+* symfony3.3 cheat sheet - create project #3
+* symfony3.3 cheat sheet - Launch project for development (built-in web server) #2
 * symfony3.3 cheat sheet #1
 
 

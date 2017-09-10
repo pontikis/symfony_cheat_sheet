@@ -17,6 +17,9 @@ Various commands are tested in [Debian](https://www.debian.org/) server (Jessie 
 
 Some commands may not work if your system setup is different. Moreover in MacOS or Windows systems. In these cases a link [more](https://symfony.com/doc) is set to [Symfony doc](https://symfony.com/doc).
 
+Most commands executed as normal user. Where root privileges are required, it is mentioned accordingly.
+
+
 ## Files
 
 * ``symfony3.3_cheat_sheet.md`` cheat sheet for Symfony v3.3 (under construction)

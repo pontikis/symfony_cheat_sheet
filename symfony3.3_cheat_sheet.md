@@ -2,9 +2,11 @@
 
 [Symfony](https://symfony.com) cheat sheet for Linux. 
 
-Version 0.2.1 (see CHANGELOG.md for details).
+Version 0.2.2 (see CHANGELOG.md for details).
 
 Various commands are tested in [Debian](https://www.debian.org/) server (Jessie with php 5.7 or Stretch with php 7). [Php Built-in web server](http://php.net/manual/en/features.commandline.webserver.php) is used on development. [Apache](https://httpd.apache.org/) with ``mod_php`` is used on production. Some commands may not work if your system setup is different. Moreover in MacOS or Windows systems. In these cases a link [more](https://symfony.com/doc) is set to [Symfony doc](https://symfony.com/doc).
+
+Most commands executed as normal user. Where root privileges are required, it is mentioned accordingly. 
 
 Copyright Christos Pontikis http://www.pontikis.net
 
@@ -13,9 +15,10 @@ Project page https://github.com/pontikis/symfony_cheat_sheet
 License [MIT](https://github.com/pontikis/symfony_cheat_sheet/blob/master/LICENSE)
 
 ## Installation
+As root (otherwise use ``sudo``)
 ```
-sudo curl -LsS https://symfony.com/installer -o /usr/local/bin/symfony
-sudo chmod a+x /usr/local/bin/symfony
+curl -LsS https://symfony.com/installer -o /usr/local/bin/symfony
+chmod a+x /usr/local/bin/symfony
 ```
 [more](https://symfony.com/doc/current/setup.html)
 
@@ -56,9 +59,59 @@ Point your browser to http://192.168.1.103:8000
 php bin/console server:stop
 ```
 ### remarks
-* Allow port 8000 if you use firewall. For example (in case of iptables): ``iptables -A INPUT -p tcp --dport 8000 -j``
+* Allow port 8000 if you use firewall. For example (in case of iptables): ``iptables -A INPUT -p tcp --dport 8000 -j`` (as root)
 * Php built-in web server doesn't support SSL encryption. It's for plain HTTP requests. 
 
 ## Launch project on production (Apache 2.4 with mod_php)
 
+### file permissions (important)
+As root:
+```
+cd /var/www/html/project_name
+setfacl -dR -m u:www-data:rwX var
+setfacl -R -m u:www-data:rwX var
+```
 [more](http://symfony.com/doc/current/setup/file_permissions.html)
+
+### Apache configuration
+As root:
+```
+cd /etc/apache2/sites-available/
+nano www.project-name.com.conf
+```
+the file will look like:
+```
+<VirtualHost 78.47.62.248:80>
+    ServerName project-name.com
+    ServerAlias www.project-name.com
+    ServerAdmin you@your-email.com
+    
+    DocumentRoot /var/www/html/project_name/web
+    
+    <Directory /var/www/html/project_name/web>
+        Options -Indexes +FollowSymLinks +MultiViews
+        AllowOverride All
+        Require all granted
+    </Directory>
+    
+    ErrorLog ${APACHE_LOG_DIR}/project-name.com_error.log
+    
+    # Possible values include: debug, info, notice, warn, error, crit,
+    # alert, emerg.
+    LogLevel warn
+    
+    CustomLog ${APACHE_LOG_DIR}/project-name.com_access.log combined
+
+</VirtualHost>
+```
+enable site:
+```
+a2ensite www.project-name.com.conf
+```
+restart Apache:
+```
+systemctl restart apache2.service
+```
+Point your browser to http://www.project-name.com
+
+[more](https://symfony.com/doc/current/setup/web_server_configuration.html)
