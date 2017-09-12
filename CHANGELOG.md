@@ -14,6 +14,7 @@ Upcoming Release 0.2.4 (XX Sep 2017)
 -------------------------
 
 * symfony3.3 cheat sheet - PhpStorm #8
+* symfony3.3 cheat sheet - Directory structure #7
 
 Release 0.2.3 (10 Sep 2017)
 -------------------------
