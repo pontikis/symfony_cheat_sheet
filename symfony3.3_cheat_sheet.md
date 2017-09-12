@@ -219,3 +219,27 @@ web/        |                              | The public web root directory with 
 > In Symfony speak, a bundle is a structured set of files (PHP files, stylesheets, JavaScripts, images, ...) that implements a single feature (a blog, a forum, ...) and which can be easily shared with other developers.
 
 The most "important" folders during development are **src/** (PHP files) and **app/** (everything else).
+
+## Routes and Controllers
+
+### Hello world
+
+```php
+<?php
+
+namespace AppBundle\Controller;
+
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\Response;
+
+class helloController
+{
+    /**
+     * @Route("/hello", name="helloWorld")
+     */
+    public function helloAction()
+    {
+        return new Response('Hello world!');
+    }
+}
+```
