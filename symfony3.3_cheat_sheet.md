@@ -192,5 +192,17 @@ If you are using [Phpstorm](https://www.jetbrains.com/phpstorm), remember to ins
 * [Symfony plugin](https://plugins.jetbrains.com/plugin/7219-symfony-plugin)
 * [Php Annotations plugin](https://plugins.jetbrains.com/plugin/7320-php-annotations)
 
+## Directory structure
 
+The default and recommended Symfony project structure is as follows:
+
+Dir     | Description
+----------- | -----------------------
+**app/** | The application configuration, templates and translations.
+**bin/** | Executable files (e.g. ``bin/console``)
+**src/** | The project's PHP code
+**tests/** | Automatic tests (e.g. Unit tests)
+**var/** | Generated files (cache, logs, etc.)
+**vendor/** | The third-party dependencies
+**web/** | The web root directory
 
