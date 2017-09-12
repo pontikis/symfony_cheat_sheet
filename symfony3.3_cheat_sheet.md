@@ -192,6 +192,11 @@ If you are using [Phpstorm](https://www.jetbrains.com/phpstorm), remember to ins
 * [Symfony plugin](https://plugins.jetbrains.com/plugin/7219-symfony-plugin)
 * [Php Annotations plugin](https://plugins.jetbrains.com/plugin/7320-php-annotations)
 
+[Composer](https://getcomposer.org/) can be used from PhpStorm to install or update depedencies. Minimum requirements:
+* composer 
+* php-cli (for Debian/Ubuntu `apt-get install php-cli`)
+* php-xml (for Debian/Ubuntu `apt-get install php-xml`)
+
 ## Directory structure
 
 The default and recommended Symfony project structure is as follows:
