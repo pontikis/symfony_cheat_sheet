@@ -186,3 +186,11 @@ composer update
 ```
 It will update dependencies to the latest version (and ``composer.lock`` file, as well).
 
+## PhpStorm
+
+If you are using [Phpstorm](https://www.jetbrains.com/phpstorm), remember to install 
+* [Symfony plugin](https://plugins.jetbrains.com/plugin/7219-symfony-plugin)
+* [Php Annotations plugin](https://plugins.jetbrains.com/plugin/7320-php-annotations)
+
+
+

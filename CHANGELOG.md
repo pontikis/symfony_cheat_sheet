@@ -10,6 +10,11 @@ Project page https://github.com/pontikis/symfony_cheat_sheet
 License [MIT](https://github.com/pontikis/symfony_cheat_sheet/blob/master/LICENSE)
 
 
+Upcoming Release 0.2.4 (XX Sep 2017)
+-------------------------
+
+* symfony3.3 cheat sheet - PhpStorm #8
+
 Release 0.2.3 (10 Sep 2017)
 -------------------------
 
