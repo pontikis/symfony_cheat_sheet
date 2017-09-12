@@ -196,13 +196,19 @@ If you are using [Phpstorm](https://www.jetbrains.com/phpstorm), remember to ins
 
 The default and recommended Symfony project structure is as follows:
 
-Dir     | Description
------------ | -----------------------
-**app/** | The application configuration, templates and translations.
-**bin/** | Executable files (e.g. ``bin/console``)
-**src/** | The project's PHP code
-**tests/** | Automatic tests (e.g. Unit tests)
-**var/** | Generated files (cache, logs, etc.)
-**vendor/** | The third-party dependencies
-**web/** | The web root directory
+Dir         | Subdir                       | Description
+----------- | ---------------------------- | ----------------------------------------
+**app/**    | `app/config`                 | application configuration
+            | `app/Resources/views`        | the Twig templates
+            | `app/Resources/translations` | the translations 
+            |                              | the ``AppKernel`` class (``AppKernel.php``) which is the main entry point of the application where Symfony Bundles are registered
+bin/        |                              |  Executable files (e.g. ``bin/console``)
+**src/**    |                              | The project's PHP code (as ``src/AppBundle`` etc)
+tests/      |                              | Automatic tests (e.g. Unit tests)
+var/        |                              | Generated files (cache, logs, etc.)
+vendor/     |                              | The third-party dependencies managed by Composer (php Classes etc)
+web/        |                              | The public web root directory with the Front Controller (``app.php`` or ``app_dev.php``) and the public web assets (CSS, JS, images etc)
 
+> In Symfony speak, a bundle is a structured set of files (PHP files, stylesheets, JavaScripts, images, ...) that implements a single feature (a blog, a forum, ...) and which can be easily shared with other developers.
+
+The most "important" folders are **src/** (PHP files) and **app/** (everything else).
