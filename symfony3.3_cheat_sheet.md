@@ -203,7 +203,7 @@ Dir         | Subdir                       | Description
 .           | `app/Resources/translations` | the translations 
 .           |                              | the `AppKernel` class (`AppKernel.php`) which is the main entry point of the application where Symfony Bundles are registered
 bin/        |                              |  Executable files (e.g. `bin/console`)
-**src/**    |                              | The project's PHP code (as `src/AppBundle` etc)
+**src/**    | `src/AppBundle`              | The project's PHP code (Rooting and Controllers)
 tests/      |                              | Automatic tests (e.g. Unit tests)
 var/        |                              | Generated files (cache, logs, etc.)
 vendor/     |                              | The third-party dependencies managed by Composer (php Classes etc)
