@@ -192,6 +192,8 @@ If you are using [Phpstorm](https://www.jetbrains.com/phpstorm), remember to ins
 * [Symfony plugin](https://plugins.jetbrains.com/plugin/7219-symfony-plugin)
 * [Php Annotations plugin](https://plugins.jetbrains.com/plugin/7320-php-annotations)
 
+In Settings -> Languages & Frameworks -> PHP -> Symphony edit "Translation root path" from `app/cache/dev/translations` to `var/cache/dev/translations`
+
 [Composer](https://getcomposer.org/) can be used from PhpStorm to install or update dependencies. Minimum requirements:
 * composer 
 * php-cli (for Debian/Ubuntu `apt-get install php-cli`)
