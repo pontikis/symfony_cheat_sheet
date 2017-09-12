@@ -199,7 +199,7 @@ The default and recommended Symfony project structure is as follows:
 Dir         | Subdir                       | Description
 ----------- | ---------------------------- | ----------------------------------------
 **app/**    | `app/config`                 | application configuration
-.           | `app/Resources/views`        | the Twig templates
+.           | `app/Resources/views`        | the [Twig](https://twig.symfony.com/) templates
 .           | `app/Resources/translations` | the translations 
 .           |                              | the `AppKernel` class (`AppKernel.php`) which is the main entry point of the application where Symfony Bundles are registered
 bin/        |                              |  Executable files (e.g. `bin/console`)
