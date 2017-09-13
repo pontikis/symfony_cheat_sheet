@@ -222,17 +222,24 @@ The most "important" folders during development are **src/** (PHP files) and **a
 
 ## Routes and Controllers
 
+To create a "page" (or an "action") in Symfony you need:
+* a **Route** which defines the URL in annotations with douvle asterisks
+* a **Controller** the class which create the "page", which must return a "Response" object
+
 ### Hello world
+
+This is the simplest Controller. It print 'Hello world!'.
 
 ```php
 <?php
 
+// src/AppBundle/Controller/HelloController.php
 namespace AppBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Response;
 
-class helloController
+class HelloController
 {
     /**
      * @Route("/hello", name="helloWorld")
