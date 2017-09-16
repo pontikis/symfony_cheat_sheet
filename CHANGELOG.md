@@ -13,6 +13,7 @@ License [MIT](https://github.com/pontikis/symfony_cheat_sheet/blob/master/LICENS
 Upcoming Release 0.2.4 (XX Sep 2017)
 -------------------------
 
+* symfony3.3 cheat sheet - Deploy in subdirectory (no domain) #11
 * symfony3.3 cheat sheet - PhpStorm #8
 * symfony3.3 cheat sheet - Directory structure #7
 

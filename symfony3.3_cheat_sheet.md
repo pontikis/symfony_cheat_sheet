@@ -116,6 +116,14 @@ Point your browser to http://www.project-name.com
 
 [more](https://symfony.com/doc/current/setup/web_server_configuration.html)
 
+### Deploy in subdirectory (no domain)
+
+Using `{{ asset(foo) }}` for web assets and `{{ path(controller_name) }}` to create links in Twig templates, you can access the project at
+
+http://www.domain.tld/project_name/web
+
+(but in some cases, special settings are required)
+
 ## Symfony with Git
 
 After creating Symfony project, create Git repository:
